@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3865C6BC28F35CBB000144BD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6BB28F35CBB000144BD /* Tests_iOS.swift */; };
+		3865C6C728F35CBB000144BD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6C628F35CBB000144BD /* Tests_macOS.swift */; };
+		3865C6C928F35CBB000144BD /* Brainstorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3865C69D28F35CBA000144BD /* Brainstorm.xcdatamodeld */; };
+		3865C6CA28F35CBB000144BD /* Brainstorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3865C69D28F35CBA000144BD /* Brainstorm.xcdatamodeld */; };
+		3865C6CB28F35CBB000144BD /* BrainstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C69F28F35CBA000144BD /* BrainstormApp.swift */; };
+		3865C6CC28F35CBB000144BD /* BrainstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C69F28F35CBA000144BD /* BrainstormApp.swift */; };
+		3865C6CD28F35CBB000144BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6A028F35CBA000144BD /* ContentView.swift */; };
+		3865C6CE28F35CBB000144BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6A028F35CBA000144BD /* ContentView.swift */; };
+		3865C6CF28F35CBB000144BD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6A128F35CBA000144BD /* Persistence.swift */; };
+		3865C6D028F35CBB000144BD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6A128F35CBA000144BD /* Persistence.swift */; };
+		3865C6D128F35CBB000144BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3865C6A228F35CBB000144BD /* Assets.xcassets */; };
+		3865C6D228F35CBB000144BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3865C6A228F35CBB000144BD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3865C6B828F35CBB000144BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3865C69828F35CBA000144BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3865C6A628F35CBB000144BD;
+			remoteInfo = "Brainstorm (iOS)";
+		};
+		3865C6C328F35CBB000144BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3865C69828F35CBA000144BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3865C6AE28F35CBB000144BD;
+			remoteInfo = "Brainstorm (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3865C69E28F35CBA000144BD /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		3865C69F28F35CBA000144BD /* BrainstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainstormApp.swift; sourceTree = "<group>"; };
+		3865C6A028F35CBA000144BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3865C6A128F35CBA000144BD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3865C6A228F35CBB000144BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3865C6A728F35CBB000144BD /* Brainstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3865C6AA28F35CBB000144BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3865C6AF28F35CBB000144BD /* Brainstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3865C6B128F35CBB000144BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3865C6B228F35CBB000144BD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3865C6B728F35CBB000144BD /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3865C6BB28F35CBB000144BD /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		3865C6BD28F35CBB000144BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3865C6C228F35CBB000144BD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3865C6C628F35CBB000144BD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		3865C6C828F35CBB000144BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3865C6A428F35CBB000144BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6AC28F35CBB000144BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6B428F35CBB000144BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6BF28F35CBB000144BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3865C69728F35CBA000144BD = {
+			isa = PBXGroup;
+			children = (
+				3865C69C28F35CBA000144BD /* Shared */,
+				3865C6A928F35CBB000144BD /* iOS */,
+				3865C6B028F35CBB000144BD /* macOS */,
+				3865C6BA28F35CBB000144BD /* Tests iOS */,
+				3865C6C528F35CBB000144BD /* Tests macOS */,
+				3865C6A828F35CBB000144BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3865C69C28F35CBA000144BD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3865C69F28F35CBA000144BD /* BrainstormApp.swift */,
+				3865C6A028F35CBA000144BD /* ContentView.swift */,
+				3865C6A128F35CBA000144BD /* Persistence.swift */,
+				3865C6A228F35CBB000144BD /* Assets.xcassets */,
+				3865C69D28F35CBA000144BD /* Brainstorm.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3865C6A828F35CBB000144BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3865C6A728F35CBB000144BD /* Brainstorm.app */,
+				3865C6AF28F35CBB000144BD /* Brainstorm.app */,
+				3865C6B728F35CBB000144BD /* Tests iOS.xctest */,
+				3865C6C228F35CBB000144BD /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3865C6A928F35CBB000144BD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3865C6AA28F35CBB000144BD /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3865C6B028F35CBB000144BD /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3865C6B128F35CBB000144BD /* Info.plist */,
+				3865C6B228F35CBB000144BD /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3865C6BA28F35CBB000144BD /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3865C6BB28F35CBB000144BD /* Tests_iOS.swift */,
+				3865C6BD28F35CBB000144BD /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		3865C6C528F35CBB000144BD /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3865C6C628F35CBB000144BD /* Tests_macOS.swift */,
+				3865C6C828F35CBB000144BD /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3865C6A628F35CBB000144BD /* Brainstorm (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3865C6D528F35CBB000144BD /* Build configuration list for PBXNativeTarget "Brainstorm (iOS)" */;
+			buildPhases = (
+				3865C6A328F35CBB000144BD /* Sources */,
+				3865C6A428F35CBB000144BD /* Frameworks */,
+				3865C6A528F35CBB000144BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brainstorm (iOS)";
+			productName = "Brainstorm (iOS)";
+			productReference = 3865C6A728F35CBB000144BD /* Brainstorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3865C6AE28F35CBB000144BD /* Brainstorm (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3865C6D828F35CBB000144BD /* Build configuration list for PBXNativeTarget "Brainstorm (macOS)" */;
+			buildPhases = (
+				3865C6AB28F35CBB000144BD /* Sources */,
+				3865C6AC28F35CBB000144BD /* Frameworks */,
+				3865C6AD28F35CBB000144BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brainstorm (macOS)";
+			productName = "Brainstorm (macOS)";
+			productReference = 3865C6AF28F35CBB000144BD /* Brainstorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3865C6B628F35CBB000144BD /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3865C6DB28F35CBB000144BD /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				3865C6B328F35CBB000144BD /* Sources */,
+				3865C6B428F35CBB000144BD /* Frameworks */,
+				3865C6B528F35CBB000144BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3865C6B928F35CBB000144BD /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 3865C6B728F35CBB000144BD /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3865C6C128F35CBB000144BD /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3865C6DE28F35CBB000144BD /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				3865C6BE28F35CBB000144BD /* Sources */,
+				3865C6BF28F35CBB000144BD /* Frameworks */,
+				3865C6C028F35CBB000144BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3865C6C428F35CBB000144BD /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 3865C6C228F35CBB000144BD /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3865C69828F35CBA000144BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3865C6A628F35CBB000144BD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3865C6AE28F35CBB000144BD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3865C6B628F35CBB000144BD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3865C6A628F35CBB000144BD;
+					};
+					3865C6C128F35CBB000144BD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3865C6AE28F35CBB000144BD;
+					};
+				};
+			};
+			buildConfigurationList = 3865C69B28F35CBA000144BD /* Build configuration list for PBXProject "Brainstorm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3865C69728F35CBA000144BD;
+			productRefGroup = 3865C6A828F35CBB000144BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3865C6A628F35CBB000144BD /* Brainstorm (iOS) */,
+				3865C6AE28F35CBB000144BD /* Brainstorm (macOS) */,
+				3865C6B628F35CBB000144BD /* Tests iOS */,
+				3865C6C128F35CBB000144BD /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3865C6A528F35CBB000144BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3865C6D128F35CBB000144BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6AD28F35CBB000144BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3865C6D228F35CBB000144BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6B528F35CBB000144BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6C028F35CBB000144BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3865C6A328F35CBB000144BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3865C6CB28F35CBB000144BD /* BrainstormApp.swift in Sources */,
+				3865C6CF28F35CBB000144BD /* Persistence.swift in Sources */,
+				3865C6C928F35CBB000144BD /* Brainstorm.xcdatamodeld in Sources */,
+				3865C6CD28F35CBB000144BD /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6AB28F35CBB000144BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3865C6CC28F35CBB000144BD /* BrainstormApp.swift in Sources */,
+				3865C6D028F35CBB000144BD /* Persistence.swift in Sources */,
+				3865C6CA28F35CBB000144BD /* Brainstorm.xcdatamodeld in Sources */,
+				3865C6CE28F35CBB000144BD /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6B328F35CBB000144BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3865C6BC28F35CBB000144BD /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3865C6BE28F35CBB000144BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3865C6C728F35CBB000144BD /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3865C6B928F35CBB000144BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3865C6A628F35CBB000144BD /* Brainstorm (iOS) */;
+			targetProxy = 3865C6B828F35CBB000144BD /* PBXContainerItemProxy */;
+		};
+		3865C6C428F35CBB000144BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3865C6AE28F35CBB000144BD /* Brainstorm (macOS) */;
+			targetProxy = 3865C6C328F35CBB000144BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3865C6D328F35CBB000144BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3865C6D428F35CBB000144BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3865C6D628F35CBB000144BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = boves.Brainstorm;
+				PRODUCT_NAME = Brainstorm;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3865C6D728F35CBB000144BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = boves.Brainstorm;
+				PRODUCT_NAME = Brainstorm;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3865C6D928F35CBB000144BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = boves.Brainstorm;
+				PRODUCT_NAME = Brainstorm;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3865C6DA28F35CBB000144BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = boves.Brainstorm;
+				PRODUCT_NAME = Brainstorm;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3865C6DC28F35CBB000144BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "boves.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brainstorm (iOS)";
+			};
+			name = Debug;
+		};
+		3865C6DD28F35CBB000144BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "boves.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brainstorm (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3865C6DF28F35CBB000144BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "boves.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Brainstorm (macOS)";
+			};
+			name = Debug;
+		};
+		3865C6E028F35CBB000144BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "boves.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Brainstorm (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3865C69B28F35CBA000144BD /* Build configuration list for PBXProject "Brainstorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3865C6D328F35CBB000144BD /* Debug */,
+				3865C6D428F35CBB000144BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3865C6D528F35CBB000144BD /* Build configuration list for PBXNativeTarget "Brainstorm (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3865C6D628F35CBB000144BD /* Debug */,
+				3865C6D728F35CBB000144BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3865C6D828F35CBB000144BD /* Build configuration list for PBXNativeTarget "Brainstorm (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3865C6D928F35CBB000144BD /* Debug */,
+				3865C6DA28F35CBB000144BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3865C6DB28F35CBB000144BD /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3865C6DC28F35CBB000144BD /* Debug */,
+				3865C6DD28F35CBB000144BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3865C6DE28F35CBB000144BD /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3865C6DF28F35CBB000144BD /* Debug */,
+				3865C6E028F35CBB000144BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3865C69D28F35CBA000144BD /* Brainstorm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3865C69E28F35CBA000144BD /* Shared.xcdatamodel */,
+			);
+			currentVersion = 3865C69E28F35CBA000144BD /* Shared.xcdatamodel */;
+			path = Brainstorm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3865C69828F35CBA000144BD /* Project object */;
+}
